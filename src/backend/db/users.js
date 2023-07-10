@@ -1,0 +1,103 @@
+import { v4 as uuid } from "uuid";
+import { formatDate } from "../utils/authUtils";
+
+export const users = [
+  {
+    _id: uuid(),
+    firstName: "Madhusudan",
+    lastName: "Kulkarni",
+    username: "madhusudan@gmail.com",
+    password: "madhusudan123",
+    userHandler: "madhusudan_kulkarni",
+    bio: "Software Developer | React",
+    link: "https://madhusudan.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=madhusudan-kulkarni",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    firstName: "Adarsh",
+    lastName: "Balika",
+    username: "balika@gmail.com",
+    userHandler: "adarsh_balika",
+    password: "adarshBalika123",
+    bio: "this is my bio balika",
+    link: "https://adarshbalika.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=adarsh-balika",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    firstName: "John",
+    lastName: "Doe",
+    username: "johndoe@gmail.com",
+    password: "johnDoe123",
+    userHandler: "john_doe",
+    bio: "Full-stack developer",
+    link: "https://johndoe.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=john-doe",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    firstName: "Jane",
+    lastName: "Smith",
+    username: "janesmith@gmail.com",
+    password: "janeSmith123",
+    userHandler: "jane_smith",
+    bio: "UX Designer",
+    link: "https://janesmith.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=jane-smith",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    firstName: "Bob",
+    lastName: "Johnson",
+    username: "bob@gmail.com",
+    password: "bobJohnson123",
+    userHandler: "bob_johnson",
+    bio: "Data scientist",
+    link: "https://bob.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=bob-johnson",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    firstName: "Alice",
+    lastName: "Thompson",
+    username: "alice@gmail.com",
+    password: "aliceThompson123",
+    userHandler: "alice_thompson",
+    bio: "Digital marketer",
+    link: "https://alice.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=alice-thompson",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+  {
+    _id: uuid(),
+    firstName: "Charlie",
+    lastName: "Brown",
+    username: "charliebrown@gmail.com",
+    password: "charlieBrown123",
+    userHandler: "charlie_brown",
+    bio: "Product manager",
+    link: "https://charliebrown.netlify.app",
+    profilePic:
+      "https://api.dicebear.com/6.x/adventurer-neutral/svg?seed=charlie-brown",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+  },
+];

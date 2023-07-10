@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-neutral-100;
+}
+
+li {
+  @apply list-none;
+}
+
+.menu-links {
+  @apply text-gray-700 py-2 px-4 mb-4 cursor-pointer rounded-[16px] font-semibold block;
+}
+
+.menu-links:hover {
+  @apply text-gray-800 bg-gray-300;
+  @apply shadow-xl text-rose-500;
+}
+
+.active {
+  @apply bg-neutral-200 text-gray-800 shadow-sm;
+}
+
+/* For Media Query - Tailwind uses a mobile-first breakpoint system */
+@media (max-width: 640px) {
+  .menu-links {
+    @apply text-gray-700 px-0;
+  }
+  .menu-links:hover {
+    @apply bg-none shadow-none;
+  }
+  .active {
+    @apply bg-none text-gray-800 shadow-none px-0;
+  }
+  .container {
+    @apply max-h-[calc(100vh-3.5rem)];
+  }
+
+  .auth-container {
+    @apply h-[calc(100vh-3.5rem)];
+  }
+}
